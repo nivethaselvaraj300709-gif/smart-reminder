@@ -1,0 +1,58 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartReminder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>SmartReminder</h1>
+        <p>Remember. Organize. Get it done.</p>
+    </header>
+
+    <main>
+        <section class="reminder-box">
+            <h2>Add a Reminder</h2>
+
+            <form id="reminderForm">
+                <label for="task">Task Name</label>
+                <input type="text" id="task" placeholder="Enter your task" required>
+
+                <label for="category">Category</label>
+                <select id="category" required>
+                    <option value="">Select category</option>
+                    <option>Assignment</option>
+                    <option>Exam</option>
+                    <option>Record</option>
+                    <option>Project</option>
+                    <option>Personal</option>
+                </select>
+
+                <label for="date">Due Date</label>
+                <input type="date" id="date" required>
+
+                <label for="time">Reminder Time</label>
+                <input type="time" id="time" required>
+
+                <button type="submit">Add Reminder</button>
+            </form>
+        </section>
+
+        <section class="tasks">
+            <h2>My Reminders</h2>
+            <ul id="reminderList"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Stay organized with SmartReminder!</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
